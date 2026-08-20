@@ -45,6 +45,6 @@ public class EmployeeDto {
 
     public static EmployeeDto fromDomain(Employee e) {
         if (e == null) return null;
-        return new EmployeeDto(e.getId(), e.getName(), e.getEmail());
+        return new EmployeeDto(e.getId(), e.getFullName(), e.getEmail());
     }
 }
